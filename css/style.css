@@ -5,6 +5,18 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+
+
+@media screen and (max-width: 1200px) { 
+  html {
+    background: url(../images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
 .test_main {
   margin: 0px;
   padding: 0px;
