@@ -48,7 +48,7 @@ body {
 
 .test_instructions {
   position:fixed;
-  left: 42%;
+  left: 44%;
   bottom:5%;
   padding: 50px;
   margin: 100px;
@@ -98,6 +98,7 @@ body {
     border-radius: 150px;
     padding: 50px;
     font-size: 50px;
+    opacity: .85;
   }
 
   .test_body {
