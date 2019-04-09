@@ -5,18 +5,6 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-
-
-@media screen and (max-width: 1200px) { 
-  html {
-    background: url(../images/bg.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
-
 .test_main {
   margin: 0px;
   padding: 0px;
@@ -89,4 +77,44 @@ body {
 
 .test_header:hover ~ .test_hide {
   display:block;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    background: url(../images/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .test_header {
+    position: fixed;
+    top:50px;
+    width:auto;
+    width: 150px;
+    height: 150px;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+    padding: 50px;
+    font-size: 50px;
+  }
+
+  .test_body {
+    position:fixed;
+    top:150px;
+    left:50px;
+    width: 650px;
+    height: 650px;
+    -moz-border-radius: 650px;
+    -webkit-border-radius: 650px;
+    border-radius: 650px;
+    padding: 100px;
+    font-size: 50px;
+    opacity:.85;
+  }
+
+  .test_instructions {
+    display:none;
+  }
 }
