@@ -2,18 +2,32 @@
 body {
   margin: 0px;
   overflow: hidden;
-  font-family: 'Give You Glory', cursive;
-  font-size: 40px;
-}
-body:hover span {
-  display: none;
 }
 
-span {
+body:hover div.paint {
+  display:none;
+}
+
+div.paint {
   position: fixed;
   top: 50%;
   left: 50%;
   color: #000;
   margin-top: -40px;
   margin-left: -227px;
+  position: fixed;
+  font-family: 'Give You Glory', cursive;
+  font-size: 40px;
+}
+
+div.header {
+  width: 100%;
+  background-color: #999999;
+  margin: 0px;
+  padding: 15px;
+  opacity: .5;
+}
+
+div.header:hover {
+  visibility:visibile;
 }
