@@ -10,7 +10,7 @@ body {
   padding: 0px;
 }
 
-.test_header, .test_body, .test_footer {
+.test_header, .test_body, .test_footer, .test_instructions {
   border: 1px solid black;
   margin: 20px;
   background-color: #ffffff;
@@ -30,24 +30,37 @@ body {
   padding: 20px;
 }
 
-.test_body {
+.test_hide {
   display:none;
+}
+.test_body {
   position:fixed;
   top:50px;
-  left:15%;
+  left:10%;
   width: 500px;
   height: 500px;
   -moz-border-radius: 500px;
   -webkit-border-radius: 500px;
   border-radius: 500px;
-  padding: 50px;
+  padding: 60px;
   font-size: 32px;
 }
 
 .test_instructions {
   position:fixed;
-  right:10%;
-  bottom:10%;
+  left: 42%;
+  bottom:5%;
+  padding: 50px;
+  margin: 100px;
+  font-style:italic;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  font-size:22px;
+  background-color:#666666;
+  color:#FFFFFF;
 }
 
 .test_footer {
@@ -62,6 +75,6 @@ body {
 
 }
 
-.test_header:hover + .test_body {
+.test_header:hover ~ .test_hide {
   display:block;
 }
