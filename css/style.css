@@ -1,10 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Give+You+Glory);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 body {
   margin: 0px;
   overflow: hidden;
-  font-family: 'Give You Glory', cursive;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
-
 
 .test_main {
   margin: 0px;
@@ -14,6 +13,9 @@ body {
 .test_header, .test_body, .test_footer {
   border: 1px solid black;
   margin: 20px;
+  background-color: #ffffff;
+  text-align:center;
+  opacity:.75;
 }
 
 .test_header {
@@ -32,27 +34,34 @@ body {
   display:none;
   position:fixed;
   top:50px;
-  left:10%;
+  left:15%;
   width: 500px;
   height: 500px;
   -moz-border-radius: 500px;
   -webkit-border-radius: 500px;
   border-radius: 500px;
-  text-align:center;
   padding: 50px;
+  font-size: 32px;
 }
 
 .test_instructions {
-  display:none;
+  position:fixed;
+  right:10%;
+  bottom:10%;
+}
+
+.test_footer {
+  positing:fixed;
+  bottom:0%;
+  width:90%;
 }
 
 .test_header:hover {
   background-color: #000000;
   color: #FFFFFF;
+
 }
 
 .test_header:hover + .test_body {
   display:block;
-  opacity: .8;
-  background: #FFFFFF;
 }
