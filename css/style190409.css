@@ -5,13 +5,10 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-p {
-  line-height:.8px;
-}
-
 ul {
   list-style-type:none;
 }
+
 li {
   font-size:60px;
 }
@@ -67,14 +64,15 @@ li {
   border-radius: 500px;
   padding: 60px;
   font-size: 32px;
+  opacity:.85;
 }
 
 .test_instructions {
   position:fixed;
   left: 44%;
   bottom:5%;
-  padding: 50px;
-  margin: 100px;
+  padding: 40px;
+  margin: 90px;
   font-style:italic;
   width: 100px;
   height: 100px;
@@ -107,7 +105,7 @@ li {
   display:block;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
   html {
     background: url(../images/bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
