@@ -44,7 +44,7 @@ li {
   margin: 20px;
   text-align:center;
   background:#FFFFFF;
-  opacity:.75;
+  opacity:.85;
 }
 
 /* Buttons */
@@ -162,7 +162,7 @@ li {
   color: #ffffff;
 }
 
-.button_show:hover ~ .hide {
+.button_show:hover ~ .body_front {
   display:block;
 }
 
