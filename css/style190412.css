@@ -24,12 +24,11 @@ ul {
 }
 
 li {
-  font-size:60px;
   margin:0px;
 }
 
 /* Fonts */
-.footer{
+.footer {
   color: #CCCCCC;
   text-align: center;
   font-family: verdana, sans-serif;
@@ -37,8 +36,12 @@ li {
   font-weight:100;
 }
 
+.lead {
+  font-size:
+}
+
 /* Circles */
-.button_show, .body_front, .body_instructions, .body_services {
+.button_show, .body_front, .body_instructions, .body_services, .body_accessibility {
   position: fixed;
   border: 1px solid black;
   margin: 20px;
@@ -88,11 +91,11 @@ li {
 }
 
 .button_instructions {
-  top: 180px;
+  top: 150px;
 }
 
 .button_menu {
-  top: 150px;
+  top: 180px;
 }
 
 .button_accessibility {
@@ -100,14 +103,10 @@ li {
 }
 
 /* Body Containers */
-.body_front, .body_instructions, .body_services {
+.body_front, .body_instructions, .body_services, .body_accessibility, .body_contact {
   position:fixed;
-  font-size: 32px;
   opacity:.85;
-  display:block;
-}
-
-.body_front {
+  display:none;
   top:3px;
   left:1%;
   width: 450px;
@@ -116,6 +115,14 @@ li {
   -webkit-border-radius: 450px;
   border-radius: 450px;
   padding: 60px;
+}
+
+.body_front {
+  font-size: 32px;
+}
+
+.body_accessibility, .body_instructions {
+  font-size: 24px;
 }
 
 /* Containers: Organizational */
@@ -166,6 +173,14 @@ li {
   display:block;
 }
 
+.button_instructions:hover ~ .body_instructions {
+  display:block;
+}
+
+.button_accessibility:hover ~ .body_accessibility {
+  display:block;
+}
+
 .button_show:hover {
   background-color: #000000;
   color: #FFFFFF;
@@ -202,7 +217,7 @@ li {
     opacity: .85;
   }
 
-  .body_front, .body_services, .body_instructions {
+  .body_front, .body_services, .body_instructions, .body_accessibility {
     position:fixed;
     top:120px;
     left:30px;
@@ -217,16 +232,24 @@ li {
 
   .body_front {
     opacity:.90;
+    display:block;
   }
 
   .body_services {
     opacity:.85;
     display:none;
-    overflow: visible;
   }
 
   .body_instructions {
-    display:none;
+    position:fixed;
+    top:120px;
+    left:30px;
+    width: 650px;
+    height: 650px;
+    -moz-border-radius: 650px;
+    -webkit-border-radius: 650px;
+    border-radius: 650px;
+    padding: 100px;
   }
 
   .footer {
@@ -238,7 +261,7 @@ li {
   .button_instructions, .button_accessibility, .button_menu {
     display:block;
     position: fixed;
-    bottom: 200px;
+    top: 500%;
     border: 0px solid black;
     width:auto;
     width: 20px;
@@ -252,15 +275,15 @@ li {
   }
 
   .button_instructions {
-    left: 180px;
+    left: 0;
   }
 
   .button_menu {
-    left: 150px;
+    left: 0;
   }
 
   .button_accessibility {
-    left: 120px;
+    left: 0;
   }
 
   .button_services:hover ~ .body_services {
