@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
   <title>TheD•tConcept. Let's connect the Dots</title>
-<link rel="stylesheet" href="css/style190412.css">
+<link rel="stylesheet" href="css/style190415.css">
 </head>
 
 <body>
 <canvas id='canvas'></canvas>
 <script  src="js/index.js"></script>
 <div class="main">
+  <input type="checkbox" id="menu" class="menu_checkbox">
+  <label for="menu" class="button_menu"><img src="https://img.icons8.com/material-sharp/24/000000/menu.png" alt="Menu" title="Click to keep menu"></label>
+  <div class="sidebar">
+    <div class="sidebar_items">
+      <ul>
+        <li>services</li>
+        <li>portfolio</li>
+        <!-- <li>blog</li> -->
+        <li>contact</li>
+      </ul>
+    </div>
+  </div>
   <!-- mobile-only buttons -->
   <div class="button_services">services</div>
   <div class="body_services">
@@ -26,7 +38,6 @@
     </ul>
   </div>
   <!-- end mobile-only buttons -->
-  <!-- <div class="button_menu"><img src="https://img.icons8.com/material-sharp/24/000000/menu.png" alt="Menu"></div> -->
   <div class="button_accessibility">
     <a href="accessible.html">
       <img src="https://img.icons8.com/material-sharp/26/000000/accessibility2.png" alt="Click here for accessibility and text version of this website.">
@@ -38,10 +49,9 @@
   <div class="button_instructions"><img src="https://img.icons8.com/material-two-tone/24/000000/user-manual.png" alt="Instructions"></div>
     <div class="body_instructions">
       <h2>Instructions</h2>
-      <ul>
-      <li>Move your mouse to paint.</li>
-      <li>Click once to change the ink color.</li>
-      <li>Click twice to refresh the canvas.</li>
+      <p>Move your mouse to paint.
+      <br>Click once to change the ink color.
+      <br>Click twice to refresh the canvas.
       <p>Ink colors are selected at random.</p>
       <p>Mouse affect created by <a href="https://codepen.io/tholman/pen/ifDak">Tim Holman</a>.</p>
     </div>

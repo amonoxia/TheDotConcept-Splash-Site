@@ -5,11 +5,6 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h2 {
-  margin-bottom: 0px;
-  margin: 0px;
-}
-
 a {
   color: #999999;
   text-decoration:none;
@@ -43,11 +38,41 @@ li {
 /* Circles */
 .button_show, .body_front, .body_instructions, .body_services, .body_accessibility {
   position: fixed;
-  border: 1px solid black;
+  border: 1px solid #000000;
+  border-right: 3px solid #000000;
   margin: 20px;
   text-align:center;
   background:#FFFFFF;
   opacity:.85;
+}
+
+.sidebar {
+  position:fixed;
+  bottom: 50px;
+  left: 0px;
+  display:none;
+}
+
+.sidebar li {
+  font-size:20px;
+  margin-bottom:5px;
+  width:auto;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  padding:5px;
+  opacity:.85;
+}
+
+.sidebar li:hover {
+  opacity: .85;
+  cursor: pointer;
+  font-weight: bolder;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Buttons */
@@ -73,6 +98,11 @@ li {
   padding: 20px;
 }
 
+.button_show:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
 /* Tiny icon buttons */
 .button_instructions, .button_accessibility, .button_menu {
   display:block;
@@ -86,20 +116,22 @@ li {
   -webkit-border-radius: 20px;
   border-radius: 20px;
   padding: 3px;
-  background: #FFFFFF;
-  opacity: .9;
+  background-color: #FFFFFF;
+  opacity: .85;
 }
 
 .button_instructions {
-  top: 150px;
+  top: 120px;
 }
 
 .button_menu {
   top: 180px;
+  cursor: pointer;
 }
 
 .button_accessibility {
-  top: 120px;
+  top: 150px;
+  cursor: pointer;
 }
 
 /* Body Containers */
@@ -108,7 +140,7 @@ li {
   opacity:.85;
   display:none;
   top:3px;
-  left:1%;
+  left:50px;
   width: 450px;
   height: 450px;
   -moz-border-radius: 450px;
@@ -131,7 +163,7 @@ li {
   bottom: 0%;
   left: 0%;
   width: 100%;
-  background-color: black;
+  background-color: #000000;
   margin:0px;
   height:50px;
   opacity:.75;
@@ -144,6 +176,8 @@ li {
 .main {
   margin: 0px;
   padding: 0px;
+  position: relative;
+  z-index:0px;
 }
 
 .tooltip {
@@ -181,9 +215,16 @@ li {
   display:block;
 }
 
-.button_show:hover {
-  background-color: #000000;
-  color: #FFFFFF;
+.button_menu:hover ~ .sidebar {
+  display:block;
+}
+
+.menu_checkbox:checked ~ .sidebar {
+  display:block;
+}
+
+.menu_checkbox {
+  display: none;
 }
 
 /* Mobile only */
