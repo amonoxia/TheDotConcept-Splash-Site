@@ -1,3 +1,5 @@
+@media screen and (min-width: 1200px) {
+
 .sidebar {
   display:none;
 }
@@ -25,4 +27,6 @@
 
 .button_instructions:hover ~ .body {
   display:none;
+}
+
 }
