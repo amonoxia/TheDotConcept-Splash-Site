@@ -16,15 +16,21 @@
 
   .sidebar li {
     font-size: 40px;
+    padding: 25px;
   }
 
   .body_circle {
+    top: 150px;
     width: 600px;
     height: 600px;
     -moz-border-radius: 600px;
     -webkit-border-radius: 600px;
     border-radius: 600px;
     padding: 60px;
-    font-size: 24px;
+    font-size: 40px;
     line-height: 1.5;
+  }
+
+  .button_instructions {
+    display:none;
   }
