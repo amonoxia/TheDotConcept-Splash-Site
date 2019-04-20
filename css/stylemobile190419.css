@@ -7,6 +7,15 @@
     -o-background-size: cover;
   }
 
-  .button_show {
+  body {
+    font-size: 50px;
+  }
+
+  .button_show, .button_accessibility, .button_instructions {
     display:none;
+  }
+
+  .sidebar {
+    top: 100px;
+    font-size: 60px;
   }

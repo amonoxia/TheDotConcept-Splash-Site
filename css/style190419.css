@@ -33,7 +33,10 @@ h1 {
 
 h2 {
   font-size: 26px;
-  opacity: .65;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 a {
@@ -54,7 +57,7 @@ ul.body {
 }
 
 li {
-  margin:0px;
+  padding: 15px;
 }
 
 li a {
@@ -186,7 +189,6 @@ li a:hover {
 .body_circle {
   top: 50px;
   left: 150px;
-  border: 1px solid #000000;
   text-align:center;
   display:block;
   width: 450px;
