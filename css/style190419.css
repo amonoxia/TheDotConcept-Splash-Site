@@ -161,7 +161,7 @@ li a:hover {
 }
 
 /* Body Containers */
-.body_circle, .body_square, .body_column {
+.body_circle, .body_square {
   position: fixed;
   background-color: #FFFFFF;
   color: #000000;

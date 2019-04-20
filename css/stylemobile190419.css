@@ -7,59 +7,15 @@
     -o-background-size: cover;
   }
 
-  body {
-    font-size: 50px;
-  }
-
-  li a {
-    color: #666666;
-    font-size: 40px;
-  }
-
-  .button_show, .button_accessibility, .button_instructions {
-    display:none;
-  }
-
-  .sidebar {
-    top: 100px;
-    font-size: 60px;
-  }
-
   .footer {
-    font-size: 32px;
-    height:100px;
+    font-size: 22px;
     opacity: .85;
     text-align: center;
-    padding-left: 0px;
-  }
-
-  .sidebar {
-    position:fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    display:block;
+    padding: 0px;
   }
 
   .sidebar li {
-    font-size:40px;
-    margin-bottom:5px;
-    margin: 25px;
-    width:auto;
-    background-color: #FFFFFF;
-    color: #000000;
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    border-radius: 100px;
-    padding:25px;
-    opacity:.85;
-    float:left;
-  }
-
-  .body_circle, .body_square {
-    top: 200px;
+    font-size: 40px;
   }
 
   .body_circle {
@@ -68,9 +24,7 @@
     -moz-border-radius: 600px;
     -webkit-border-radius: 600px;
     border-radius: 600px;
-  }
-
-  .body_square {
-    height: 80%;
-    overflow:scroll;
+    padding: 60px;
+    font-size: 24px;
+    line-height: 1.5;
   }
