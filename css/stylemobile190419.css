@@ -71,5 +71,6 @@
   }
 
   .body_square {
-    height: 60%;
+    height: 80%;
+    overflow:scroll;
   }
