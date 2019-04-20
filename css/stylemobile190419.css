@@ -12,7 +12,7 @@
   }
 
   li a {
-    color: #FFFFFF;
+    color: #666666;
     font-size: 40px;
   }
 
@@ -46,8 +46,8 @@
     margin-bottom:5px;
     margin: 25px;
     width:auto;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #000000;
     width: 100px;
     height: 100px;
     -moz-border-radius: 100px;
@@ -58,10 +58,18 @@
     float:left;
   }
 
-  .sidebar li.active a {
-    color: #FFFFFF;
+  .body_circle, .body_square {
+    top: 200px;
   }
 
-  .body_circle, .body_square {
-    top: 300px;
+  .body_circle {
+    width: 600px;
+    height: 600px;
+    -moz-border-radius: 600px;
+    -webkit-border-radius: 600px;
+    border-radius: 600px;
+  }
+
+  .body_square {
+    height: 60%;
   }
