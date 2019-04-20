@@ -229,10 +229,6 @@ li a:hover {
 }
 
 /* Behaviors */
-.menu_checkbox:checked ~ .sidebar {
-  display:block;
-}
-
 .menu_checkbox {
   display: none;
 }

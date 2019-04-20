@@ -1,0 +1,28 @@
+.sidebar {
+  display:none;
+}
+
+.body {
+  display:none;
+}
+
+/* Behaviors */
+.menu_checkbox:checked ~ .sidebar {
+  display:block;
+}
+
+.menu_checkbox:checked ~ .sidebar {
+  display:block;
+}
+
+.menu_checkbox:checked ~ .body {
+  display:block;
+}
+
+.button_accessibility:hover ~ .body {
+  display:none;
+}
+
+.button_instructions:hover ~ .body {
+  display:none;
+}
