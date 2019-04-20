@@ -12,7 +12,7 @@
   }
 
   li a {
-    color: #666666;
+    color: #FFFFFF;
     font-size: 40px;
   }
 
@@ -31,4 +31,37 @@
     opacity: .85;
     text-align: center;
     padding-left: 0px;
+  }
+
+  .sidebar {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display:block;
+  }
+
+  .sidebar li {
+    font-size:40px;
+    margin-bottom:5px;
+    margin: 25px;
+    width:auto;
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    padding:25px;
+    opacity:.85;
+    float:left;
+  }
+
+  .sidebar li.active a {
+    color: #FFFFFF;
+  }
+
+  .body_circle, .body_square {
+    top: 300px;
   }
