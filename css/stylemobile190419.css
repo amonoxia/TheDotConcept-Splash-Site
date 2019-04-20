@@ -11,6 +11,11 @@
     font-size: 50px;
   }
 
+  li a {
+    color: #666666;
+    font-size: 40px;
+  }
+
   .button_show, .button_accessibility, .button_instructions {
     display:none;
   }
@@ -18,4 +23,12 @@
   .sidebar {
     top: 100px;
     font-size: 60px;
+  }
+
+  .footer {
+    font-size: 32px;
+    height:100px;
+    opacity: .85;
+    text-align: center;
+    padding-left: 0px;
   }
