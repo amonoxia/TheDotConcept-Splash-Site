@@ -1,0 +1,260 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+body {
+  margin: 0px;
+  overflow: hidden;
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p.lead {
+  font-size: 24px;
+  color: #000000;
+  opacity: .95;
+}
+
+p.large {
+  color: #000000;
+  font-size: 42px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  line-height:.25;
+  opacity: .65;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: 26px;
+  opacity: .65;
+}
+
+a {
+  color: #999999;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+ul {
+  list-style-type:none;
+}
+
+ul.body {
+  list-style:circle;
+}
+
+li {
+  margin:0px;
+}
+
+li a {
+  color: #666666;
+}
+
+li a:hover {
+  text-decoration:none;
+  color: #000000;
+}
+
+/* Fonts */
+.footer {
+  color: #CCCCCC;
+  text-align: center;
+  font-family: verdana, sans-serif;
+  font-size: small;
+  font-weight:100;
+}
+
+/* Sidebar */
+.sidebar {
+  position:fixed;
+  bottom: 50px;
+  left: 0px;
+  display:block;
+}
+
+.sidebar li {
+  font-size:20px;
+  margin-bottom:5px;
+  width:auto;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  padding:5px;
+  opacity:.85;
+}
+
+.sidebar li:hover {
+  opacity: .95;
+}
+
+.sidebar li.active {
+  opacity: .95;
+}
+
+.sidebar li.active a {
+  color: #000000;
+}
+
+/* Buttons */
+.button_show {
+  top:0%;
+  font-size:24px;
+  width:auto;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  padding: 20px;
+  cursor: pointer;
+  position: fixed;
+  border: 1px solid #000000;
+  margin: 20px;
+  text-align:center;
+  opacity:.85;
+}
+
+.button_show:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* Tiny icon buttons */
+.button_instructions, .button_accessibility, .button_menu {
+  display:block;
+  position: fixed;
+  left: 20px;
+  border: 0px solid black;
+  width:auto;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  padding: 3px;
+  background-color: #FFFFFF;
+  opacity: .85;
+}
+
+.button_instructions {
+  top: 120px;
+}
+
+.button_accessibility {
+  top: 150px;
+  cursor: pointer;
+}
+
+/* Body Containers */
+.body_circle, .body_square, .body_column {
+  position: fixed;
+  background-color: #FFFFFF;
+  color: #000000;
+  opacity: .9;
+}
+
+.body_square {
+  top: 100px;
+  left: 150px;
+  max-width: 60%;
+  max-height: 72%;
+  padding: 25px;
+  font-size: 22px;
+  line-height: 1.7;
+  overflow: scroll;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin-right:10px;
+}
+
+.body_circle {
+  top: 50px;
+  left: 150px;
+  border: 1px solid #000000;
+  text-align:center;
+  display:block;
+  width: 450px;
+  height: 450px;
+  -moz-border-radius: 450px;
+  -webkit-border-radius: 450px;
+  border-radius: 450px;
+  padding: 60px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.body_instructions, .body_accessibility {
+  display:none;
+}
+
+/* Containers: Organizational */
+.footer {
+  position:fixed;
+  bottom: 0%;
+  padding: 5px 0 5px 175px;
+  left: 0%;
+  width: 100%;
+  background-color: #000000;
+  margin:0px;
+  height:50px;
+  opacity:.75;
+  text-align: left;
+  font-size: 12px;
+  font-weight:lighter;
+}
+
+.main {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  z-index:0px;
+}
+
+/* Behaviors */
+.menu_checkbox:checked ~ .sidebar {
+  display:block;
+}
+
+.menu_checkbox {
+  display: none;
+}
+
+.menu_checkbox:checked ~ .sidebar {
+  display:none;
+}
+
+.menu_checkbox:checked ~ .body {
+  display:none;
+}
+
+.button_instructions:hover ~ .body_instructions {
+  display:block;
+}
+
+.button_accessibility:hover ~ .body_accessibility {
+  display:block;
+}
+
+.button_accessibility:hover ~ .body {
+  display:none;
+}
+
+.button_instructions:hover ~ .body {
+  display:none;
+}
