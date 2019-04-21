@@ -7,6 +7,7 @@ p, h1, h2, h3, p.large, a, p.lead {
 
 a {
   text-decoration: underline;
+  color: #FFFFFF;
 }
 
 h1 {
@@ -17,7 +18,7 @@ li {
   padding: 10px;
 }
 
-li a {
+.sidebar li a {
   opacity:.9;
   color: #FFFFFF;
   text-decoration:none;
