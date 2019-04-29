@@ -1,13 +1,12 @@
 /* Mobile only */
 @media screen and (max-width: 1200px) {
 
-p, h1, h2, h3, p.large, a, p.lead {
-  color: #FFFFFF;
+h1, h2, h3, p.large, p.lead {
+  color: #000000;
 }
 
 a {
   text-decoration: underline;
-  color: #FFFFFF;
 }
 
 h1 {
@@ -15,23 +14,23 @@ h1 {
 }
 
 li {
-  padding: 10px;
+  padding: 5px;
 }
 
 .sidebar li a {
   opacity:.9;
-  color: #FFFFFF;
+  color: #000000;
   text-decoration:none;
 }
 
 li a:hover {
   text-decoration:none;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .button_show:hover, .sidebar li:hover {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .sidebar li {
@@ -39,14 +38,16 @@ li a:hover {
 }
 
 .sidebar li.active a {
-  color: #FFFFFF;
+  color: #000000;
+  opacity:.8;
 }
 
 .footer {
-  font-size: 16px;
+  font-size: 18px;
   opacity: .85;
   text-align: center;
   padding: 0px;
+  color: #FFFFFF;
 }
 
 #myVideo {
@@ -58,14 +59,17 @@ li a:hover {
 }
 
 .body_circle, .body_square, .button_show, .sidebar li {
-  opacity:.65;
-  background-color: #084263;
-  color: #FFFFFF;
-  border: solid 1px #FFFFFF;
+  opacity:.80;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: solid 1px #000000;
 }
 
-/* .body_circle {
-  top:10%;
-  left: 5%;
+.body_square {
+  top: 75px;
+  left: 150px;
 }
-*/
+
+video {
+  opacity:.85;
+}
