@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "christiahall@gmail.com";
+    $email_to = "info@thedotconcept.com";
     $email_subject = "Contact form on TheD•tConcept.com";
 
     function died($error) {
@@ -73,7 +73,7 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);
 
 // http_redirect
-header( 'Location: http://com.thedotconcept.devv/thankyou.html' ) ;
+header( 'Location: http://thedotconcept.com/thankyou.html' ) ;
 ?>
 
 <!-- include your own success html here -->

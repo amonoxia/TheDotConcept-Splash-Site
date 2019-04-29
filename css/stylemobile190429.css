@@ -70,6 +70,10 @@ li a:hover {
   left: 150px;
 }
 
+.button_instructions {
+  display:none;
+}
+
 video {
   opacity:.85;
 }
