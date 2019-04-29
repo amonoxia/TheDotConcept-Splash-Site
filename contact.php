@@ -1,3 +1,23 @@
+<?php
+if(isset($_POST['submit'])){
+    $to = "info@thedotconcept.com";
+    $from = $_POST['email'];
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $subject = "TheDotConcept.com Contact Form submission";
+    $subject2 = "Copy of your form submission on TheDotConcept.com";
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    header('Location: thankyou.html');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,7 +74,7 @@
   <div class="body">
     <div class="body_square">
       <h2>Contact us</h2>
-      <p>Give us a call or send us an email for more information, or simply fill out the form below.
+      <p>Give us a call or send us an email for more information, or fill out the form below.
       <br>
       <span class="formspace">Tel:</span><a href="tel:+15037419151">503.741.9151</a>
       <br>
