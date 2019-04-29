@@ -184,6 +184,10 @@ input, textarea {
 }
 
 /* Body Containers */
+.body_circle {
+  border: 1px solid #000000;
+}
+
 .body_circle, .body_square {
   position: fixed;
   background-color: #FFFFFF;
