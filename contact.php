@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
         <br>Click once to change the ink color.
         <br>Click twice to refresh the canvas.
         <p>Ink colors are selected at random.</p>
-        <p>Click "<b>show</b>" to see the whole canvas</p>
+        <p>Click "<b>show</b>" to show the content or to see the whole canvas.</p>
         <p>Mouse affect created by <a href="https://codepen.io/tholman/pen/ifDak">Tim Holman</a>.</p>
       </div>
     </div>
