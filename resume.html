@@ -5,21 +5,22 @@
   <meta charset="UTF-8">
   <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
   <title>TheD•tConcept. Let's connect the Dots</title>
-<link rel="stylesheet" href="css/style190429.css">
-<link rel="stylesheet" href="css/stylemobile190429.css">
+  <link rel="stylesheet" href="css/style190429.css">
+  <link rel="stylesheet" href="css/iframe.css">
+  <link rel="stylesheet" href="css/stylemobile190429.css">
 </head>
 
 <body>
-<!-- Mobile-only video section -->
-<div class="mobile">
-  <video autoplay muted loop id="myVideo">
-    <source src="images/dots_color.mp4" type="video/mp4">
-  </video>
-</div>
-<!-- End mobile only video section -->
+  <!-- Mobile-only video section -->
+  <div class="mobile">
+    <video autoplay muted loop id="myVideo">
+      <source src="images/dots_color.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!-- End mobile only video section -->
+<canvas id='canvas'></canvas>
+<script  src="js/index.js"></script>
 <div class="main">
-  <canvas id='canvas'></canvas>
-  <script  src="js/index.js"></script>
   <input type="checkbox" id="menu" class="menu_checkbox">
   <label for="menu">
     <div class="button_show">show</div>
@@ -45,42 +46,30 @@
         <br>Click once to change the ink color.
         <br>Click twice to refresh the canvas.
         <p>Ink colors are selected at random.</p>
-        <p>Click "<b>show</b>" to show the content or to see the whole canvas.</p>
+        <p>Click "show" to see the whole canvas</p>
         <p>Mouse affect created by <a href="https://codepen.io/tholman/pen/ifDak">Tim Holman</a>.</p>
       </div>
     </div>
     <!-- end tiny buttons -->
-<!-- begin the body of the page -->
   <div class="body">
     <div class="body_square">
-      <h2>Contact us</h2>
-      <p>Give me a call or send an email for more information.
-      <br>
-      <span class="formspace">Tel:</span><a href="tel:+15037419151">503.741.9151</a>
-      <br>
-      <span class="formspace">Email:</span><a href="mailto:info@thedotconcept.com">info@thedotconcept.com</a>
-      <br>
-      <span class="formspace">Github:</span><a href="https://github.com/christiahall" target="_blank">https://github.com/christiahall</a>
-      <br>
-      <span class="formspace">Slack:</span><a href="https://thedotconcept.slack.com" target="_blank">http://thedotconcept.slack.com</a>
-      <h2>Resume</h2>
-      <p>Click here for my <a href="resume.html">resume</a>.</p>
+      <h1>Resume</h1>
+      <iframe src="https://github.com/christiahall/Resume/blob/master/Resume%20Drupal%20Dev%20Christia%20Hall.pdf"></iframe>
     </div>
   </div>
-<!-- end the body of the page -->
   <div class="sidebar">
     <div class="sidebar_items">
       <ul>
         <li><a href="home.html">home</a></li>
         <li><a href="services.html">services</a></li>
 <!--        <li><a href="portfolio.html">portfolio</a></li> -->
-<!--    <li><a href="blog.html">blog</a></li> -->
-        <li class="active"><a href="contact.html">contact</a></li>
+<!--    <li class="active"><a href="blog.html">blog</a></li> -->
+        <li><a href="contact.php">contact</a></li>
       </ul>
     </div>
   </div>
 </div>
-<div class="footer"><p>©2019 Christia Hall. TheD•tConcept.com. <a href="contact.html">Contact Us</a>.</p></div>
+<div class="footer"><p>©2019 Christia Hall. TheD•tConcept.com. <a href="contact.php">Contact Us</a>.</p></div>
 </div>
 </body>
 
