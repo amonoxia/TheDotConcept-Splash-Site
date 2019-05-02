@@ -1,3 +1,5 @@
+@media screen and (max-width: 1200px) {
+
 .body_circle {
   display:block;
 }
@@ -13,4 +15,6 @@
 
 .menu_checkbox:checked ~ .body {
   display:block;
+}
+
 }
