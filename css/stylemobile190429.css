@@ -26,6 +26,11 @@ p.lead {
   font-size: 52px;
 }
 
+p.large {
+  color: #000000;
+  font-size: 60px;
+}
+
 .sidebar li a {
   opacity:.9;
   color: #000000;
