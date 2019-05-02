@@ -73,13 +73,19 @@ if(isset($_POST['submit'])){
 <!-- begin the body of the page -->
   <div class="body">
     <div class="body_square">
-      <h2>Contact us</h2>
-      <p>Give us a call or send us an email for more information, or fill out the form below.
-      <br>
+      <h2>Contact info</h2>
+      <p>
       <span class="formspace">Tel:</span><a href="tel:+15037419151">503.741.9151</a>
       <br>
       <span class="formspace">Email:</span><a href="mailto:info@thedotconcept.com">info@thedotconcept.com</a>
-      <form name="contactform" method="post" action="send_form_email.php">
+      <br>
+      <span class="formspace">Github:</span><a href="https://github.com/christiahall" target="_blank">https://github.com/christiahall</a>
+      <br>
+      <span class="formspace">Slack:</span><a href="https://thedotconcept.slack.com" target="_blank">https://thedotconcept.slack.com</a>
+      </p>
+      <h2>Leave a message</h2>
+      <p>
+        <form name="contactform" method="post" action="send_form_email.php">
         <span class="formspace"><label for="name">Your Name:</label></span>
         <input type="text" name="name"><br>
         <span class="formspace"><label for="email">Email:</label></span>
@@ -89,7 +95,12 @@ if(isset($_POST['submit'])){
         <span class="formspace"><label for="message">Message:</label></span>
         <textarea type="text" name="message"></textarea><br>
         <input type="submit" value="Submit">
-      </form>
+        </form>
+      </p>
+      <!--
+      <h2>Resume</h2>
+      <p>Click here for my <a href="https://github.com/christiahall/Resume/blob/master/Resume%20Drupal%20Dev%20Christia%20Hall.pdf" target="_blank">resume</a>.</p>
+    -->
     </div>
   </div>
 <!-- end the body of the page -->
@@ -100,7 +111,7 @@ if(isset($_POST['submit'])){
         <li><a href="services.html">services</a></li>
 <!--        <li><a href="portfolio.html">portfolio</a></li> -->
 <!--    <li><a href="blog.html">blog</a></li> -->
-        <li class="active"><a href="contact.html">contact</a></li>
+        <li class="active"><a href="contact.php">contact</a></li>
       </ul>
     </div>
   </div>
