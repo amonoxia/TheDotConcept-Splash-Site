@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
 <!-- Mobile-only video section -->
 <div class="mobile">
   <video autoplay muted loop id="myVideo">
-    <source src="images/dots.mp4" type="video/mp4">
+    <source src="images/dots_bigger.mp4" type="video/mp4">
   </video>
 </div>
 <!-- End mobile only video section -->
