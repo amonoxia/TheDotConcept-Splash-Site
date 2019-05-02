@@ -33,6 +33,11 @@ li a:hover {
   color: #000000;
 }
 
+.sidebar {
+  position:fixed;
+  top:200px;
+}
+
 .sidebar li {
   margin-top:50px;
 }
