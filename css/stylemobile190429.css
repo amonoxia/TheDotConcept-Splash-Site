@@ -11,10 +11,19 @@ a {
 
 h1 {
   padding-top: 25px;
+  font-size:60px;
+}
+
+h2 {
+  font-size: 56px;
 }
 
 li {
   padding: 5px;
+}
+
+p.lead {
+  font-size: 52px;
 }
 
 .sidebar li a {
@@ -34,12 +43,19 @@ li a:hover {
 }
 
 .sidebar {
-  position:fixed;
-  top:200px;
+  top: 200px;
 }
 
 .sidebar li {
   margin-top:50px;
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 80px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+  padding: 20px;
+  font-size: 32px;
+
 }
 
 .sidebar li.active a {
@@ -70,13 +86,50 @@ li a:hover {
   border: solid 1px #000000;
 }
 
+.button_show {
+  top:0%;
+  font-size:48px;
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  padding: 20px;
+}
+
+.body_circle {
+  left:200px;
+  width: 600px;
+  height: 600px;
+  -moz-border-radius: 600px;
+  -webkit-border-radius: 600px;
+  border-radius: 600px;
+  padding: 20px;
+  font-size: 48px;
+}
+
 .body_square {
   top: 75px;
-  left: 150px;
+  left: 200px;
+  font-size: 48px;
 }
 
 .button_instructions {
   display:none;
+}
+
+.button_accessibility {
+  top: 180px;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.formspace {
+  margin-right:50px;
 }
 
 video {

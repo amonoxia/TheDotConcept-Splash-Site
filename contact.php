@@ -86,7 +86,7 @@ if(isset($_POST['submit'])){
       <h2>Leave a message</h2>
       <p>
         <form name="contactform" method="post" action="send_form_email.php">
-        <span class="formspace"><label for="name">Your Name:</label></span>
+        <span class="formspace"><label for="name">Name:</label></span>
         <input type="text" name="name"><br>
         <span class="formspace"><label for="email">Email:</label></span>
         <input type="text" name="email"><br>
