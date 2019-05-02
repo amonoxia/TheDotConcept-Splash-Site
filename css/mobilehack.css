@@ -1,0 +1,16 @@
+.body_circle {
+  display:block;
+}
+
+/* Behaviors */
+.menu_checkbox {
+  display: none;
+}
+
+.menu_checkbox:checked ~ .sidebar {
+  display:block;
+}
+
+.menu_checkbox:checked ~ .body {
+  display:block;
+}
